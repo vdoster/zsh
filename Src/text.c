@@ -46,7 +46,7 @@ int text_expand_tabs;
  * et seq. in zsh.h.
  */
 static const char *cond_binary_ops[] = {"=",   "==",  "!=",  "<",   ">",   "-nt", "-ot", "-ef",
-					"-eq", "-ne", "-lt", "-gt", "-le", "-ge", "=~",	 NULL};
+                                        "-eq", "-ne", "-lt", "-gt", "-le", "-ge", "=~",  NULL};
 
 static char *tptr, *tbuf, *tlim, *tpending;
 static int tsiz, tindent, tnewlins, tjob;
@@ -471,8 +471,8 @@ gettext2(Estate state)
 			if (WC_SUBLIST_SKIP(s->code) == 0)
 			    stack = 1;
 			taddstr((stack || (!(WC_SUBLIST_FLAGS(s->code) & WC_SUBLIST_SIMPLE) && wc_code(*state->pc) != WC_PIPE))
-				    ? "!"
-				    : "! ");
+			            ? "!"
+			            : "! ");
 		    }
 		    if (WC_SUBLIST_FLAGS(s->code) & WC_SUBLIST_COPROC)
 			taddstr("coproc ");
@@ -1006,8 +1006,8 @@ void
 getredirs(LinkList redirs)
 {
     LinkNode n;
-    static char *fstr[] = {">", ">|", ">>",  ">>|", "&>", "&>|", "&>>",		 "&>>|", "<>",
-			   "<", "<<", "<<-", "<<<", "<&", ">&",	 NULL /* >&- */, "<",	 ">"};
+    static char *fstr[] = {">", ">|", ">>",  ">>|", "&>", "&>|", "&>>",          "&>>|", "<>",
+                           "<", "<<", "<<-", "<<<", "<&", ">&",  NULL /* >&- */, "<",    ">"};
 
     queue_signals();
 

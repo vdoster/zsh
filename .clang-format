@@ -20,7 +20,7 @@ BasedOnStyle: LLVM
 # .indent.pro: --indent-level4, --tab-size8
 IndentWidth: 4
 TabWidth: 8
-UseTab: Always
+UseTab: ForIndentation
 ContinuationIndentWidth: 4
 
 # -- Column limit --
