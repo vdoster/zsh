@@ -8,6 +8,12 @@ TAGS
 *.so
 *.dll
 *~
+
+# CodeQL artifacts
+_codeql_detected_source_root
+
+# Generated build files
+/ltmain.sh
 .*.sw?
 \#*
 
